@@ -24,7 +24,7 @@ namespace WebAPI_Structure.Core.Models
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-5K6KLKB\\SQLEXPRESS;Initial Catalog=DemoDB;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=true;");
+                optionsBuilder.UseSqlServer("Data Source=PC0773\\MSSQL2019;Initial Catalog=DemoDB;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=true;");
             }
         }
 

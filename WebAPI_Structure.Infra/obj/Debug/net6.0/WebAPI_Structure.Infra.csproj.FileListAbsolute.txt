@@ -32,3 +32,20 @@ C:\Users\Swapnil\Downloads\First_WebAPI\First_WebAPI\WebAPI_Structure\WebAPI_Str
 C:\Users\Swapnil\Downloads\First_WebAPI\First_WebAPI\WebAPI_Structure\WebAPI_Structure.Infra\obj\Debug\net6.0\refint\WebAPI_Structure.Infra.dll
 C:\Users\Swapnil\Downloads\First_WebAPI\First_WebAPI\WebAPI_Structure\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.pdb
 C:\Users\Swapnil\Downloads\First_WebAPI\First_WebAPI\WebAPI_Structure\WebAPI_Structure.Infra\obj\Debug\net6.0\ref\WebAPI_Structure.Infra.dll
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\bin\Debug\net6.0\WebAPI_Structure.Infra.deps.json
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\bin\Debug\net6.0\WebAPI_Structure.Infra.dll
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\bin\Debug\net6.0\WebAPI_Structure.Infra.pdb
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\bin\Debug\net6.0\WebAPI_Structure.App.dll
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\bin\Debug\net6.0\WebAPI_Structure.Core.dll
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\bin\Debug\net6.0\WebAPI_Structure.App.pdb
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\bin\Debug\net6.0\WebAPI_Structure.Core.pdb
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.csproj.AssemblyReference.cache
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.AssemblyInfoInputs.cache
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.AssemblyInfo.cs
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.csproj.CoreCompileInputs.cache
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.csproj.CopyComplete
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.dll
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\refint\WebAPI_Structure.Infra.dll
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\WebAPI_Structure.Infra.pdb
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure.Infra\obj\Debug\net6.0\ref\WebAPI_Structure.Infra.dll
