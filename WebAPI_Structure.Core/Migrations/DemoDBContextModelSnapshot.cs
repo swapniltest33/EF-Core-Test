@@ -36,7 +36,7 @@ namespace WebAPI_Structure.Core.Migrations
 
                     b.HasKey("ProductId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("WebAPI_Structure.Core.Models.UserAdmin", b =>

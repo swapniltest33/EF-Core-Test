@@ -12,7 +12,7 @@ using WebAPI_Structure.Core.Models;
 namespace WebAPI_Structure.Core.Migrations
 {
     [DbContext(typeof(DemoDBContext))]
-    [Migration("20230721051430_initial")]
+    [Migration("20230720173201_initial")]
     partial class initial
     {
         /// <inheritdoc />

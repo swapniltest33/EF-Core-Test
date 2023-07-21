@@ -3305,19 +3305,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\swapnil.sawant\\.nuget\\packages\\": {}
+    "C:\\Users\\Swapnil\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Swapnil WorkFloor\\EF-Core-Final\\EF-Core-Test\\WebAPI_Structure.Infra\\WebAPI_Structure.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\Swapnil\\Downloads\\First_WebAPI\\First_WebAPI\\WebAPI_Structure\\WebAPI_Structure.Infra\\WebAPI_Structure.Infra.csproj",
       "projectName": "WebAPI_Structure.Infra",
-      "projectPath": "D:\\Swapnil WorkFloor\\EF-Core-Final\\EF-Core-Test\\WebAPI_Structure.Infra\\WebAPI_Structure.Infra.csproj",
-      "packagesPath": "C:\\Users\\swapnil.sawant\\.nuget\\packages\\",
-      "outputPath": "D:\\Swapnil WorkFloor\\EF-Core-Final\\EF-Core-Test\\WebAPI_Structure.Infra\\obj\\",
+      "projectPath": "C:\\Users\\Swapnil\\Downloads\\First_WebAPI\\First_WebAPI\\WebAPI_Structure\\WebAPI_Structure.Infra\\WebAPI_Structure.Infra.csproj",
+      "packagesPath": "C:\\Users\\Swapnil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Swapnil\\Downloads\\First_WebAPI\\First_WebAPI\\WebAPI_Structure\\WebAPI_Structure.Infra\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\swapnil.sawant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Swapnil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3325,17 +3330,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Swapnil WorkFloor\\EF-Core-Final\\EF-Core-Test\\WebAPI_Structure.App\\WebAPI_Structure.App.csproj": {
-              "projectPath": "D:\\Swapnil WorkFloor\\EF-Core-Final\\EF-Core-Test\\WebAPI_Structure.App\\WebAPI_Structure.App.csproj"
+            "C:\\Users\\Swapnil\\Downloads\\First_WebAPI\\First_WebAPI\\WebAPI_Structure\\WebAPI_Structure.App\\WebAPI_Structure.App.csproj": {
+              "projectPath": "C:\\Users\\Swapnil\\Downloads\\First_WebAPI\\First_WebAPI\\WebAPI_Structure\\WebAPI_Structure.App\\WebAPI_Structure.App.csproj"
             },
-            "D:\\Swapnil WorkFloor\\EF-Core-Final\\EF-Core-Test\\WebAPI_Structure.Core\\WebAPI_Structure.Core.csproj": {
-              "projectPath": "D:\\Swapnil WorkFloor\\EF-Core-Final\\EF-Core-Test\\WebAPI_Structure.Core\\WebAPI_Structure.Core.csproj"
+            "C:\\Users\\Swapnil\\Downloads\\First_WebAPI\\First_WebAPI\\WebAPI_Structure\\WebAPI_Structure.Core\\WebAPI_Structure.Core.csproj": {
+              "projectPath": "C:\\Users\\Swapnil\\Downloads\\First_WebAPI\\First_WebAPI\\WebAPI_Structure\\WebAPI_Structure.Core\\WebAPI_Structure.Core.csproj"
             }
           }
         }
@@ -3379,7 +3385,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
