@@ -41,12 +41,14 @@ namespace WebAPI_Structure.Controllers
             //string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password, salt);
             int salt = 11;
             string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password, salt);
-            bool verified = BCrypt.Net.BCrypt.Verify(user.Password, passwordHash);
+            bool verified = BCrypt.Net.BCrypt.Verify(request.Password, passwordHash);
             if (verified)
             {
                 string token = CreateToken(user);
                 var data = new UserAdminResponse();
                 data.Email = user.Email;
+                data.FirstName = user.FirstName;
+                data.LastName = user.LastName;
                 data.Password = user.Password;
                 data.UserId = user.UserId;
                 data.Token = token;
