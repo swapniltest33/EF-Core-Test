@@ -248,7 +248,6 @@ D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\WebAPI_Structure.AssemblyInfoInputs.cache
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\WebAPI_Structure.AssemblyInfo.cs
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\WebAPI_Structure.csproj.CoreCompileInputs.cache
-D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\WebAPI_Structure.MvcApplicationPartsAssemblyInfo.cs
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\WebAPI_Structure.MvcApplicationPartsAssemblyInfo.cache
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\staticwebassets\msbuild.WebAPI_Structure.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\staticwebassets\msbuild.build.WebAPI_Structure.props

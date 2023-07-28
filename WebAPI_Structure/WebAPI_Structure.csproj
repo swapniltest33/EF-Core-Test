@@ -20,4 +20,8 @@
     <ProjectReference Include="..\WebAPI_Structure.Infra\WebAPI_Structure.Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>

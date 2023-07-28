@@ -70,7 +70,8 @@ namespace WebAPI_Structure.Controllers
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
             DateTime d1 = DateTime.Now;
-            DateTime d2 = d1.AddSeconds(60);
+            DateTime d2 = d1.AddDays(3);
+            // DateTime d2 = d1.AddSeconds(60);
 
             var token = new JwtSecurityToken(
                 claims: claims,

@@ -7,7 +7,7 @@ using WebAPI_Structure.Infra;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddControllers();
@@ -40,7 +40,7 @@ builder.Services.AddAuthentication(options => {
 builder.Services.AddSwaggerGen(c => {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "WebAPI_Structure.App",
+        Title = "Test Dem",
         Version = "v1"
     });
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
