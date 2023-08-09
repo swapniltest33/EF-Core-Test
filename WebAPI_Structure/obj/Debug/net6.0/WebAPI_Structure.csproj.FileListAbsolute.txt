@@ -263,3 +263,4 @@ D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\WebAPI_Structure.pdb
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\WebAPI_Structure.genruntimeconfig.cache
 D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\ref\WebAPI_Structure.dll
+D:\Swapnil WorkFloor\EF-Core-Final\EF-Core-Test\WebAPI_Structure\obj\Debug\net6.0\WebAPI_Structure.MvcApplicationPartsAssemblyInfo.cs

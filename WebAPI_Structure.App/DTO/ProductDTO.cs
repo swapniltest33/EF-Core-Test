@@ -10,5 +10,7 @@ namespace WebAPI_Structure.App.DTO
     {
         public long ProductId { get; set; }
         public string ProductName { get; set; } = null!;
+
+        
     }
 }

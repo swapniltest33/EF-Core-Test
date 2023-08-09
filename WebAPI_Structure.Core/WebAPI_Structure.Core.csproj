@@ -19,4 +19,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Command\" />
+    <Folder Include="Data\Handlers\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

@@ -12,8 +12,8 @@ using WebAPI_Structure.Core.Models;
 namespace WebAPI_Structure.Core.Migrations
 {
     [DbContext(typeof(DemoDBContext))]
-    [Migration("20230720173201_initial")]
-    partial class initial
+    [Migration("20230721091623_first")]
+    partial class first
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,24 @@ namespace WebAPI_Structure.Core.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("WebAPI_Structure.Core.Models.Category", b =>
+                {
+                    b.Property<long>("CategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("CategoryId"));
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("CategoryId");
+
+                    b.ToTable("Category");
+                });
+
             modelBuilder.Entity("WebAPI_Structure.Core.Models.Product", b =>
                 {
                     b.Property<long>("ProductId")
@@ -33,11 +51,16 @@ namespace WebAPI_Structure.Core.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ProductId"));
 
+                    b.Property<long>("CategoryId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("ProductName")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("ProductId");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -89,6 +112,22 @@ namespace WebAPI_Structure.Core.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("UserAdmin", (string)null);
+                });
+
+            modelBuilder.Entity("WebAPI_Structure.Core.Models.Product", b =>
+                {
+                    b.HasOne("WebAPI_Structure.Core.Models.Category", "Category")
+                        .WithMany("products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("WebAPI_Structure.Core.Models.Category", b =>
+                {
+                    b.Navigation("products");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace WebAPI_Structure.Core.Models
 {
@@ -17,6 +19,7 @@ namespace WebAPI_Structure.Core.Models
         }
 
         public virtual DbSet<Product> Products { get; set; } = null!;
+        public virtual DbSet<Category> Category { get; set; } = null!;
         public virtual DbSet<UserAdmin> UserAdmins { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -26,13 +29,25 @@ namespace WebAPI_Structure.Core.Models
 
                 optionsBuilder.UseSqlServer("Data Source=PC0773\\MSSQL2019;Initial Catalog=DemoDB;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=true;");
             }
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>(entity =>
             {
-                entity.Property(e => e.ProductName).HasMaxLength(50);
+                entity.HasOne<Category>(e => e.Category)
+                .WithMany(e => e.products);
+                entity.Property(e => e.ProductName).HasMaxLength(50).IsRequired()
+                .IsConcurrencyToken(); 
+
+            });
+
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.HasMany<Product>(e => e.products)
+                .WithOne(e => e.Category);
+                entity.Property(e => e.CategoryName).HasMaxLength(50);
             });
 
             modelBuilder.Entity<UserAdmin>(entity =>

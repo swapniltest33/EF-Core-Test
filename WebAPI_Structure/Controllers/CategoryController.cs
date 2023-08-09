@@ -9,6 +9,7 @@ namespace WebAPI_Structure.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryServices _categoryServices;
@@ -16,7 +17,7 @@ namespace WebAPI_Structure.Controllers
         {
             _categoryServices = categoryServices;
         }
-        [Authorize]
+       
         [HttpGet("GetCategory")]
         public async Task<IActionResult> GetCategory() {
 
@@ -37,10 +38,17 @@ namespace WebAPI_Structure.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddCategory(Category ct)
+        public async Task<IActionResult> AddCategory(CategoryDTO ct)
         {
             try { 
-                var tcs =await _categoryServices.AddCategory(ct);
+                var category = new Category() { 
+                CategoryId = ct.CategoryId,
+                CategoryName = ct.CategoryName,
+                };
+                //Category category = new Category();
+                //category.CategoryId = ct.CategoryId;
+                //category.CategoryName = ct.CategoryName;
+                var tcs =await _categoryServices.AddCategory(category);
                 return Ok(tcs);
             }
             catch(Exception ex)
@@ -48,6 +56,47 @@ namespace WebAPI_Structure.Controllers
                 EmptyResult result = new EmptyResult();
                 return Ok(ex);
             }
+        }
+
+        [HttpGet]
+        [Route("{Id}")]
+        public async Task<IActionResult> GetCategoryById(int Id) {
+            try
+            {
+                var categoryId =  await _categoryServices.GetCategoryById(Id);
+                if (categoryId == null) {
+                    return NotFound();
+                }
+                return Ok(categoryId);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+                throw;
+            }
+        }
+
+      
+        [HttpPost]
+        [Route("{Id}")]
+        public async Task<IActionResult> UpdateCategory(int Id, CategoryDTO ct)
+        {
+            try
+            {
+                var category = new Category()
+                {
+                    CategoryId = ct.CategoryId,
+                    CategoryName = ct.CategoryName,
+                };
+                var categoryinfo = await _categoryServices.UpdateCategory(Id, category);
+                return Ok(categoryinfo);
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex);
+                throw;
+            }
+
         }
     }
 }
